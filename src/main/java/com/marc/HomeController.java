@@ -7,9 +7,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HomeController {
 
-    @RequestMapping("/}")
-    String mainHello(@PathVariable String name) {
-        return "Hello home page" + name + "!";
+    @RequestMapping("/")
+    String mainHello() {
+        return "Hello home page!";
     }
     @RequestMapping("/hello/{name}")
     String hello(@PathVariable String name) {
